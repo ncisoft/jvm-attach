@@ -33,7 +33,8 @@ class AttachAPI {
             if (ClassLoader.getSystemClassLoader() instanceof URLClassLoader) {
             	// Try to add tools.jar into classpath
                 String javaHome = System.getProperty("java.home");
-                String toolsJarURL = "file:" + javaHome + "/../lib/tools.jar";
+                //String toolsJarURL = "file:" + javaHome + "/../lib/tools.jar";
+                String toolsJarURL = "file:" + "lib/tools.jar";
 
             	// Make addURL public
                 Method method = URLClassLoader.class.getDeclaredMethod("addURL", URL.class);
